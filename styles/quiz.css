@@ -12,7 +12,6 @@ form{
     display:grid;
     border:1px solid navy;
     padding:4rem 1rem;
-    grid-template-columns: 1f;
     justify-content: center;
     align-items: center;
 }
