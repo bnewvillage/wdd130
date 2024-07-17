@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 05 Quiz</title>
+</head>
+<body>
+    <h1>HTML / CSS Quiz</h1>
+    <form action="/submit-quiz" method="post">
+        <fieldset>
+            <label for="q1">What does "HTML" stand for?</label>
+            <input type="text" id="q1" name="q1">
+        </fieldset>
+        <fieldset>
+            <label for="q2">Explain what CSS is used for:</label>
+            <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="q3">Choose a correct HTML tag for a paragraph:</label>
+            <select id="q3" name="q3">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="div">&lt;div&gt;</option>
+                <option value="p">&lt;p&gt;</option>
+                <option value="span">&lt;span&gt;</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="q4">How many levels of headings are there in HTML?</label>
+            <input type="number" id="q4" name="q4" min="1" max="6">
+        </fieldset>
+        <input type="submit" value="Submit Quiz">
+    </form>
+</body>
+</html>

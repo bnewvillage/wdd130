@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    max-width: 650px;
+    margin:auto;
+    padding:2rem;
+}
+
+form{
+    display:grid;
+    border:1px solid navy;
+    padding:4rem 1rem;
+    grid-template-columns: 1f;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    border:none;
+    display:grid;
+    align-items: center;
+}
+
+input,textarea,select{
+    width:400px;
+}
+
+label{
+    left:1rem;
+}
+
+input[type="submit"]{
+    height: 2rem;
+    background-color: teal;
+    color: #ffff;
+}
