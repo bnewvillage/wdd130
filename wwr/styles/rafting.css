@@ -16,6 +16,8 @@
 }
 
 body {
+    font-family: var(--paragraph-font);
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +49,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:min-content;
+    width: min-content;
     margin:0;
 }
 
@@ -56,8 +58,157 @@ header nav a {
     text-decoration: none;
     padding: 10px;
     color: var(--nav-link-color);
-    border:1px solid black;
-    margin:0.3rem;
+    border: 1px solid black;
+}
+
+section {
+    border: solid 1px var(--accent2-color);
+    margin: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+}
+
+footer p {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer nav {
+    right: 6rem;
+    gap: .7rem;
+    position: relative;
+}
+
+footer img {
+    width: 30px;
+    padding: 2px;
+}
+
+.meet-the-team {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: black;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-members figure {
+    text-align: center;
+}
+
+.team-members img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+}
+
+.contact-us {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent2-color);
+    color: black;
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 5%;
+    border: 1px solid var(--secondary-color);
+    max-width: 600px;
+    text-align: left;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    height: 10px;
+    width:35%;
+    border: 1px solid var(--primary-color);
+}
+
+.name-email{
+    display:flex;
+    flex-direction: row;
+}
+
+.name-email label{
+    width: 3.5rem;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    color: black;
+}
+
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact-form button {
+    width: 8rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.location-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    color: black;
+}
+
+.location-info .map {
+    display: flex;
+    justify-content: center;
+}
+
+.location-info .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.location-info .map iframe {
+    border: 2px solid var(--secondary-color);
+}
+
+.location-info .contact-details p {
+    color: black;
+    justify-items:left;
 }
 
 .hero {
@@ -134,33 +285,4 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    background-color: var(--nav-background-color);
-}
-
-footer p {
-    position:absolute;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-}
-
-footer nav {
-    right:6rem;
-    gap:.7rem;
-    position:relative;
-}
-
-footer img {
-    width: 30px;
-    padding: 2px;
-    
-
 }
